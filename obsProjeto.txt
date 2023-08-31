@@ -1,0 +1,26 @@
+Duas Paginas
+
+    -- Home
+    -- Especialidades
+
+Navegação do site
+    -- Clicar no logo vai para a 'Home'
+
+    - Pagina Home
+    -- Topo
+        - Pagina Home -> Sobre ; Contato
+        - Pagina Especialidades -> link especialidades
+    -- Body
+        - Botão Ver horarios -> link especialidades
+
+Divisões Pagina
+    --Topo
+    --Conteudo (index.html)
+    --Conteudo (especialidades.html)
+    --Rodapé
+
+Resposividade
+    --Mobile -> de 320px até 425px
+    --Tablet -> de 426px até 768px
+    --Desktop -> 769px pra cima
+

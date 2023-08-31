@@ -1,0 +1,177 @@
+@import url("reset.css");
+
+/*Default*/
+body{
+    width: 100%;
+    color: #0000008c;
+    min-width: 375px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1rem;
+    line-height: 1.5em;
+}
+
+.largura-tela{
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+/*Header*/
+
+.topo{
+    background-color:rgb(77, 182, 182);
+    width: 100%;
+}
+
+.topo__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.topo__links a:nth-child(even){
+    margin: 0 1em;
+}
+
+.topo__links a{
+    color: white;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+.topo__container img{
+    display: block;
+    width: 70%;
+}
+
+/*Banner*/
+.banner{
+    height: 70vh;
+    background: url("../assets/recepcao2.jpg") no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.banner::before{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: "";
+    opacity: .5;
+    background-color: #0000008c;
+}
+
+
+.banner__container{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    text-transform: uppercase;
+    color: white;
+    font-size: 3rem;
+    line-height: 4rem;
+    z-index: 2;
+}
+
+/*Conteudo*/
+.conteudo, .conteudo2{
+    width: 60%;
+    margin: 0 auto;
+}
+
+.conteudo{
+    text-align: center;
+    padding: 3em 0;
+}
+
+.conteudo h2{
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+
+.conteudo2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.conteudo__lista h3{
+    font-size: 2rem;
+    margin-bottom: 1em;
+}
+
+.conteudo__lista li{
+    margin-left: 3em;    
+}
+
+.galeria-imagens{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 4em;
+}
+
+.imagem{
+    /* width: calc((100% / 3) - 1em); */
+    width: 300px;
+    margin: .5em;
+    box-sizing: border-box;
+    box-shadow: 0 0 6px 2px grey;
+    flex: 1 2 auto;
+}
+
+.imagem img{
+    width: 100%;
+}
+
+.imagem figcaption{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+iframe{
+    width: 100%;
+}
+
+.conteudo span{
+    font-weight: bold;
+}
+
+.botao{
+    text-align: center;
+    width: 100%;
+}
+
+.botao a{
+    display: inline-block;
+    background-color: rgb(77, 182, 182);
+    padding: 1em 2em;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+}
+
+/*rodape*/
+.rodape{
+    padding: 2em;
+    margin-top: 3em;
+    background-color: rgb(18, 105, 91);
+    color: white;
+    line-height: 2rem;
+    text-align: center;
+}
+
+.rodape img{
+    width: 8.75rem;
+}
+
