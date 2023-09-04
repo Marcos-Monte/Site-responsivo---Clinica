@@ -1,10 +1,11 @@
 @import url("reset.css");
+@import url("especialidades.css");
 
 /*Default*/
 body{
     width: 100%;
+    min-width: 280px;
     color: #0000008c;
-    min-width: 375px;
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 1rem;
     line-height: 1.5em;
@@ -12,6 +13,7 @@ body{
 
 .largura-tela{
     max-width: 1024px;
+    padding: 0 .5em;
     margin: 0 auto;
 }
 
@@ -45,9 +47,9 @@ body{
 
 /*Banner*/
 .banner{
-    height: 70vh;
     background: url("../assets/recepcao2.jpg") no-repeat;
     background-size: cover;
+    background-position: center;
     position: relative;
     display: flex;
     justify-content: center;
@@ -58,13 +60,14 @@ body{
     width: 100%;
     height: 100%;
     content: "";
-    opacity: .5;
+    opacity: .8;
     background-color: #0000008c;
 }
 
 
 .banner__container{
     width: 100%;
+    box-sizing: border-box;
     height: 100%;
     position: absolute;
     display: flex;
@@ -90,6 +93,7 @@ body{
 }
 
 .conteudo h2{
+    width: 100%;
     font-size: 2rem;
     font-weight: bold;
     margin-bottom: 1em;
@@ -174,4 +178,102 @@ iframe{
 .rodape img{
     width: 8.75rem;
 }
+
+/*Hover*/
+
+.topo__links a:hover{
+    color: black
+}
+
+/*Media Query de 320 até 425 pixel de largura*/
+@media 
+    /* (min-width: 320px) and  */
+    (max-width: 425px){
+    
+    .topo__container{
+        flex-direction: column;
+    }
+    .topo__container img{
+        margin: 0 auto;
+    }
+
+    .topo__links a{
+        margin: 0;
+    }
+    .topo__links{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        padding: 1em 0;
+        border-top: 1px solid  rgb(18, 105, 91);
+    }
+
+    .banner__container, .banner__container h2{
+        width: 100%;
+        box-sizing: border-box;
+        font-size: 1.5rem;
+        padding: 0 .2em;
+        line-height: 1.5em;
+    }
+    .banner{
+        height: 200px;
+    }
+
+    .conteudo, .conteudo2 {
+        width: 100%;
+        line-height: 2em;
+    }
+    .conteudo2 img{
+        display: none;
+    }
+    .conteudo__lista h3{
+        text-align: center;
+    }
+
+}
+
+/*Media Query de 426 até 768 pixel de largura*/
+@media (min-width: 426px) and (max-width: 768px){
+
+    .banner__container, .banner__container h2{
+        width: 100%;
+        box-sizing: border-box;
+        font-size: 2rem;
+        padding: 0 .2em;
+        line-height: 1.5em;
+    }
+    .banner{
+        height: 200px;
+    }
+
+    .conteudo, .conteudo2{
+        width: 100%;
+        line-height: 2em;
+    }
+    .conteudo2 img{
+        display: none;
+    }
+    .conteudo__lista li{
+        width: 65%;
+        margin: 0 auto;
+        padding-left: .5em;
+    }
+    .conteudo__lista h3{
+        text-align: center;
+    }
+}
+
+/*Media Query de 426 até 768 pixel de largura*/
+@media (min-width: 769px) and (max-width: 1024px){
+    .banner{
+        height: 400px;
+    }
+}
+
+@media (min-width: 1025px){
+    .banner{
+        height: 500px;
+    }
+}
+
 
