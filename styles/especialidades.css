@@ -1,0 +1,130 @@
+.navegacao{
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.navegacao nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.navegacao a{
+    text-transform: capitalize;
+    color: #0000008c;
+    text-decoration: none;
+    border-bottom: 2px solid var(--azul-topo);
+    margin: 1em;
+    font-weight: bold;
+}
+
+#ortopedia h2, #pediatria h2, #geriatria h2, #psicologia h2, #fisioterapia h2{
+    font-size: 1.2rem;
+}
+
+.navegacao h1{
+    width: 100%;
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 1.5em;
+    font-weight: bold;
+}
+
+.quadro{
+    display: flex;
+    width: 100%;
+    height: 250px;
+    box-sizing: border-box;
+}
+
+.quadro img{
+    width: 30%;
+}
+
+.tabela-especialidade{
+    flex-grow: 1;
+    border-spacing: 0;
+    line-height: 2em;
+    
+}
+
+.tabela-especialidade th{
+    background-color:  var(--azul-topo);
+    text-align: start;
+    color: white;
+    font-weight: bold;
+    padding-left: 1em;
+}
+
+.tabela-especialidade tr:nth-child(odd){
+    background-color: var(--cinza-escuro);
+    
+}
+
+.tabela-especialidade tr:nth-child(even){
+    background-color: var(--cinza-claro);
+}
+
+.tabela-especialidade td{
+    padding-left: 1em;
+    vertical-align: middle;
+}
+
+/*hover*/
+.navegacao a:hover{
+    color: var(--verde-rodape);
+}
+
+/*Media Query até 425px*/
+@media (max-width: 425px){
+
+    .largura-tela{
+        padding: 0;
+    }
+    main{
+        margin-bottom: 8em;
+    }
+
+    .navegacao nav{
+        margin-top: 1em;
+        width: 100%;
+    }
+    .navegacao h1{
+        width: 100%;
+        font-size: 1.5rem;
+    }
+
+    .quadro img{
+        display: none;
+    }
+    
+}
+
+/*Media Query de 426px até 768px*/
+@media (min-width: 426px) and (max-width: 768px){
+
+    .largura-tela{
+        padding: 0;
+    }
+
+    .quadro img{
+        display: none;
+    }
+
+    .navegacao h1{
+        width: 100%;
+        font-size: 1.5rem;
+    }
+
+    #ortopedia .conteudo, #pediatria .conteudo, #geriatria .conteudo, #psicologia .conteudo, #fisioterapia .conteudo{
+        width: 80%;
+        padding: 1.5em 0;
+    }
+
+}
+
+
+

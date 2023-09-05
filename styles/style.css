@@ -2,6 +2,14 @@
 @import url("especialidades.css");
 
 /*Default*/
+
+:root{
+    --azul-topo:#00ccd0;
+    --verde-rodape: #0c6e71;
+    --cinza-escuro: #cdcdcd;
+    --cinza-claro: #f1f1f1;
+}
+
 body{
     width: 100%;
     min-width: 280px;
@@ -20,7 +28,7 @@ body{
 /*Header*/
 
 .topo{
-    background-color:rgb(77, 182, 182);
+    background-color:var(--azul-topo);
     width: 100%;
 }
 
@@ -125,7 +133,6 @@ body{
 }
 
 .imagem{
-    /* width: calc((100% / 3) - 1em); */
     width: 300px;
     margin: .5em;
     box-sizing: border-box;
@@ -157,7 +164,7 @@ iframe{
 
 .botao a{
     display: inline-block;
-    background-color: rgb(77, 182, 182);
+    background-color: var(--azul-topo);
     padding: 1em 2em;
     text-decoration: none;
     text-transform: uppercase;
@@ -169,7 +176,7 @@ iframe{
 .rodape{
     padding: 2em;
     margin-top: 3em;
-    background-color: rgb(18, 105, 91);
+    background-color: var(--verde-rodape);
     color: white;
     line-height: 2rem;
     text-align: center;
@@ -182,13 +189,18 @@ iframe{
 /*Hover*/
 
 .topo__links a:hover{
-    color: black
+    color: var(--verde-rodape);
+}
+
+.botao a:hover{
+    background-color: var(--verde-rodape);
 }
 
 /*Media Query de 320 até 425 pixel de largura*/
-@media 
-    /* (min-width: 320px) and  */
-    (max-width: 425px){
+@media (max-width: 425px){  
+    .largura-tela{
+        padding: 0;
+    }
     
     .topo__container{
         flex-direction: column;
@@ -205,7 +217,7 @@ iframe{
         display: flex;
         justify-content: space-around;
         padding: 1em 0;
-        border-top: 1px solid  rgb(18, 105, 91);
+        border-top: 1px solid  var(--verde-rodape);
     }
 
     .banner__container, .banner__container h2{
@@ -222,6 +234,7 @@ iframe{
     .conteudo, .conteudo2 {
         width: 100%;
         line-height: 2em;
+        padding: 1.5em 0;
     }
     .conteudo2 img{
         display: none;
@@ -234,6 +247,13 @@ iframe{
 
 /*Media Query de 426 até 768 pixel de largura*/
 @media (min-width: 426px) and (max-width: 768px){
+    .largura-tela{
+        padding: 0;
+    }
+
+    .topo__container{
+        padding: .3em;
+    }
 
     .banner__container, .banner__container h2{
         width: 100%;
@@ -249,6 +269,7 @@ iframe{
     .conteudo, .conteudo2{
         width: 100%;
         line-height: 2em;
+        padding: 1.5em 0;
     }
     .conteudo2 img{
         display: none;
