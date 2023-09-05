@@ -78,6 +78,13 @@
     color: var(--verde-rodape);
 }
 
+/*Media Query até 382px*/
+@media (max-width: 382px){
+    #geriatria, #psicologia{
+        margin-top: 2.5em;
+    }
+}
+
 /*Media Query até 425px*/
 @media (max-width: 425px){
 
