@@ -10,16 +10,17 @@
 
 <h2>Layouts Mobile</h2>
 
-<img src="clinica-react/public/assets/layouts/especialidades-layout-mobile.jpg" width="400px">
-<img src="clinica-react/public/assets/layouts/home-layout-mobile.jpg" width="400px">
+<img src="public/assets/layouts/home-layout-mobile.jpg" width="400px">
+
+<img src="public/assets/layouts/especialidades-layout-mobile.jpg" width="400px">
 
 <h3>OBS: Os outros Layouts estão na pasta 'layouts' no repositório.</h3>
-
 
 <ul>
     <caption>
         <h3>Tecnologias utilizadas:</h3>
     </caption>
+    <li>React Js</li>
     <li>Html Semântico</li>
     <li>CSS</li>
     <li>Flexbox</li>
@@ -30,5 +31,4 @@
     <li>Editor de código: VSCode</li>
 </ul>
 
-<h3> Desenvolvido por:</h3>
-  <p><a href="https://www.linkedin.com/in/montemarcos/" target="_blank">Marcos Monte</a></p>
+<h3>Desenvolvido por: <a href="https://www.linkedin.com/in/montemarcos/" target="_blank">Marcos Monte</a></h3> 
