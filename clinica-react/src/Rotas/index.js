@@ -8,7 +8,7 @@ import PaginaInicial from '../Paginas/PaginaInicial';
 const Rotas = () => (
     <BrowserRouter>
         <Routes>
-            <Route exact path='/home' element={<PaginaInicial />} />
+            <Route exact path='/' element={<PaginaInicial />} />
             <Route path='/especialidades' element={<PaginaEspecialidades />} />
         </Routes>
     </BrowserRouter>

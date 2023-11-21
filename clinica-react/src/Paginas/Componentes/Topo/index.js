@@ -11,14 +11,14 @@ export default function Header() {
 
             <div className="largura-tela topo__container">
 
-                <Link to="/home">
+                <Link to="/">
                     <img src="assets\logo.png" alt="Logotipo da CMLife" title="Clínica Médica Life" />
                 </Link>
 
                 <nav className="topo__links">
-                    <a href="/home#sobre">Sobre</a>
+                    <a href="/#sobre">Sobre</a>
                     <Link to="/especialidades">Especialidades</Link>
-                    <a href="/home#contato">Contato</a>
+                    <a href="/#contato">Contato</a>
                 </nav>
 
             </div>
