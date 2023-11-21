@@ -16,9 +16,9 @@ export default function Header() {
                 </Link>
 
                 <nav className="topo__links">
-                    <a href="#sobre">Sobre</a>
+                    <a href="/home#sobre">Sobre</a>
                     <Link to="/especialidades">Especialidades</Link>
-                    <a href="#contato">Contato</a>
+                    <a href="/home#contato">Contato</a>
                 </nav>
 
             </div>
