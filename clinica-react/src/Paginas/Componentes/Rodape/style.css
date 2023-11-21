@@ -1,0 +1,13 @@
+/*rodape*/
+.rodape {
+    padding: 2em;
+    margin-top: 3em;
+    background-color: var(--verde-rodape);
+    color: white;
+    line-height: 2rem;
+    text-align: center;
+}
+
+.rodape img {
+    width: 8.75rem;
+}

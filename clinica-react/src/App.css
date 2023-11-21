@@ -1,0 +1,23 @@
+/*Default*/
+
+:root {
+    --azul-topo: #00ccd0;
+    --verde-rodape: #0c6e71;
+    --cinza-escuro: #cdcdcd;
+    --cinza-claro: #f1f1f1;
+}
+
+body {
+    width: 100%;
+    min-width: 280px;
+    color: #0000008c;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1rem;
+    line-height: 1.5em;
+}
+
+.largura-tela {
+    max-width: 1024px;
+    padding: 0 .5em;
+    margin: 0 auto;
+}
