@@ -1,5 +1,10 @@
 /*Default*/
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
 :root {
     --azul-topo: #00ccd0;
     --verde-rodape: #0c6e71;

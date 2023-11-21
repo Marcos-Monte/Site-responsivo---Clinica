@@ -26,6 +26,12 @@
     width: 70%;
 }
 
+/*Hover*/
+
+.topo__links a:hover {
+    color: var(--verde-rodape);
+}
+
 /*Media Query de 320 até 425 pixel de largura*/
 @media (max-width: 425px) {
     .topo__container {

@@ -1,0 +1,219 @@
+/*Banner*/
+.banner {
+    background: url("../../../public/assets/recepcao.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.banner::before {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: "";
+    opacity: .8;
+    background-color: #0000008c;
+}
+
+
+.banner__container {
+    width: 100%;
+    box-sizing: border-box;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    text-transform: uppercase;
+    color: white;
+    font-size: 2.5rem;
+    gap: 1em;
+    line-height: 4rem;
+    z-index: 2;
+}
+
+/*Conteudo*/
+.conteudo,
+.conteudo2 {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.conteudo {
+    text-align: center;
+    padding: 3em 0;
+}
+
+.conteudo h2 {
+    width: 100%;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+
+.conteudo2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.conteudo__lista h3 {
+    font-size: 2rem;
+    margin-bottom: 1em;
+}
+
+.conteudo__lista li {
+    margin-left: 3em;
+}
+
+.galeria-imagens {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 4em;
+}
+
+.imagem {
+    width: 300px;
+    margin: .5em;
+    box-sizing: border-box;
+    box-shadow: 0 0 6px 2px grey;
+    flex: 1 2 auto;
+}
+
+.imagem img {
+    width: 100%;
+}
+
+.imagem figcaption {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.localizacao {
+    width: 100%;
+}
+
+.conteudo span {
+    font-weight: bold;
+}
+
+.botao {
+    text-align: center;
+    width: 100%;
+}
+
+.botao a {
+    display: inline-block;
+    background-color: var(--azul-topo);
+    padding: 1em 2em;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+}
+
+/* Hover */
+.botao a:hover {
+    background-color: var(--verde-rodape);
+}
+
+/*Media Query de 320 até 425 pixel de largura*/
+@media (max-width: 425px) {
+    .largura-tela {
+        padding: 0;
+    }
+
+    .banner__container,
+    .banner__container h2 {
+        width: 100%;
+        box-sizing: border-box;
+        font-size: 1.5rem;
+        padding: 0 .2em;
+        line-height: 1.5em;
+    }
+
+    .banner__container h2:last-child {
+        font-size: 1rem;
+    }
+
+    .banner {
+        height: 200px;
+    }
+
+    .conteudo,
+    .conteudo2 {
+        width: 100%;
+        line-height: 2em;
+        padding: 1.5em 0;
+    }
+
+    .conteudo2 img {
+        display: none;
+    }
+
+    .conteudo__lista h3 {
+        text-align: center;
+    }
+
+}
+
+/*Media Query de 426 até 768 pixel de largura*/
+@media (min-width: 426px) and (max-width: 768px) {
+    .largura-tela {
+        padding: 0;
+    }
+
+    .banner__container,
+    .banner__container h2 {
+        width: 100%;
+        box-sizing: border-box;
+        font-size: 2rem;
+        padding: 0 .2em;
+        line-height: 1.5em;
+    }
+
+    .banner {
+        height: 200px;
+    }
+
+    .conteudo,
+    .conteudo2 {
+        width: 100%;
+        line-height: 2em;
+        padding: 1.5em 0;
+    }
+
+    .conteudo2 img {
+        display: none;
+    }
+
+    .conteudo__lista li {
+        width: 65%;
+        margin: 0 auto;
+        padding-left: .5em;
+    }
+
+    .conteudo__lista h3 {
+        text-align: center;
+    }
+}
+
+/*Media Query de 769px até 1024px de largura*/
+@media (min-width: 769px) and (max-width: 1024px) {
+    .banner {
+        height: 400px;
+    }
+}
+
+@media (min-width: 1025px) {
+    .banner {
+        height: 500px;
+    }
+}
