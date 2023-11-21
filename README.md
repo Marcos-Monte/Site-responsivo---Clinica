@@ -10,8 +10,8 @@
 
 <h2>Layouts Mobile</h2>
 
-<img src="layouts/especialidades-layout-mobile.jpg" width="400px">
-<img src="layouts/home-layout-mobile.jpg" width="400px">
+<img src="clinica-react/public/assets/layouts/especialidades-layout-mobile.jpg" width="400px">
+<img src="clinica-react/public/assets/layouts/home-layout-mobile.jpg" width="400px">
 
 <h3>OBS: Os outros Layouts estão na pasta 'layouts' no repositório.</h3>
 
